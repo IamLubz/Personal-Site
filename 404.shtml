@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+  <title>Lubz.NL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <section>
+      <h1 class="title">404</h1><h2>Page Not Found</h2>
+    </section>
+
+    <p class="bio">Looks like this page was not found.</p>
+
+    <p class="descriptionWork">Please make sure that this is the excact link and that everything is spelled correctly.</p>
+
+    <div class="contact">
+      <div class="contact-row">
+        <span class="key">Email</span>
+        <a href="mailto:hello@lubbertschenk.com">Media@Lubz.nl</a>
+      </div>
+      <div class="contact-row">
+        <span class="key">Location</span>
+        <a href="https://maps.app.goo.gl/6ABSMJ2BHJzyda8z5">Urk, Netherlands</a>
+      </div>
+    </div>
+
+    <footer>
+      <span id="time"></span>
+      <span class="copyright">Part of &copy <a class="copyrightLink" href="https://media.lubz.nl"> Lubz Media</a></span>
+      <span>NL — <span id="year"></span></span>
+    </footer>
+  </main>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
