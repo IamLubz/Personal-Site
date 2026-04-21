@@ -1,0 +1,122 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #111;
+  --muted: #999;
+  --border: #e8e8e8;
+  --bg: #fff;
+}
+
+html { font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'DM Mono', monospace;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+main {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.label {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(3.5rem, 13vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.title {
+  font-size: 53px
+}
+
+.dot { color: var(--muted); }
+
+.handle {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  text-underline-offset: 2.5px;
+}
+
+.bio {
+  font-size: 0.82rem;
+  line-height: 1.9;
+  color: #444;
+}
+
+.descriptionWork {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #444;
+  margin-top: -15px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  font-size: 0.72rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.copyright {
+  display: flex;
+  font-size: 12px;
+  color: rgb(109, 109, 109);
+}
+
+.copyrightLink {
+  display: flex;
+  font-size: 12px;
+  color: rgb(109, 109, 109);
+  padding-left: 6px;
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+}
+
+.contact-row:last-child { border-bottom: none; }
+
+.contact-row .key { color: var(--muted); }
+
+.contact-row a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.contact-row a:hover { text-decoration: underline; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
